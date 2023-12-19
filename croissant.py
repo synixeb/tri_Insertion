@@ -1,6 +1,6 @@
 import random
 
-def generate_tab(n : int)->[int]:
+def generate_tab(n : int, max:int)->[int]:
     tab = []
     for i in range(n):
         tab.append(random.randint(0, max))

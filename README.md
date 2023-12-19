@@ -26,15 +26,45 @@ Pseudo-code:
 
 Python:
 --
+
+Iteraratif
+--
 ```py
-def tri_injection(tab: [int])->[int]:
-    tri = []
-    for i in range(len(tab)):
-        tri.append(tab[i])
-        for j in range(len(tri)-1, 0, -1):
-            if tri[j] < tri[j-1]:
-                tri[j], tri[j-1] = tri[j-1], tri[j]
-    return tri
+def tri_Insersiton(tab : [int])->[int]:
+    """
+    pre: tab est un tableau d'entiers
+    post: retourne le tableau trié par ordre croissant
+    caractéristique: stable
+    """
+    i=1
+    while i < len(tab):
+        x = tab[i]
+        j = i
+        while j > 0 and tab[j-1] > x:
+            tab[j] = tab[j-1]
+            j -= 1
+        tab[j] = x
+    return tab
+```
+
+Recursif
+--
+```py
+def tri_Insersiton_Recursif(tab : [int], i : int)->[int]: #i est le nombre de fois que la fonction a été appelée
+    """
+    pre: tab est un tableau d'entiers
+    post: retourne le tableau trié par ordre croissant
+    caractéristique: stable
+    """
+    if i < len(tab):
+        x = tab[i]
+        j = i
+        while j > 0 and tab[j-1] > x:
+            tab[j] = tab[j-1]
+            j -= 1
+        tab[j] = x
+        tri_Insersiton_Recursif(tab, i+1)
+    return tab
 ```
 
 Complexité:
@@ -68,4 +98,5 @@ trié || pas trié
 1, 2, 7, 9 (tableau completement trié)
 ```
 
-[Wikipedia](https://fr.wikipedia.org/wiki/Tri_par_insertion)
+[Wikipedia](https://fr.wikipedia.org/wiki/Tri_par_insertion) \
+[visualisation](http://lwh.free.fr/pages/algo/tri/tri_insertion.html)
