@@ -44,6 +44,7 @@ def tri_Insersiton(tab : [int])->[int]:
             tab[j] = tab[j-1]
             j -= 1
         tab[j] = x
+        i+=1
     return tab
 ```
 
