@@ -3,7 +3,7 @@
 
 explication:
 --
-Le tri par injection est un algorithme de tri par comparaison qui consiste à trier un tableau en plaçant les éléments un par un dans un tableau vide. Pour ce faire, on compare l'élément à placer avec tous les éléments déjà placés dans le tableau vide, jusqu'à trouver la position qui lui correspond.
+Le tri par insertionest un algorithme de tri par comparaison qui consiste à trier un tableau en plaçant les éléments un par un dans un tableau vide. Pour ce faire, on compare l'élément à placer avec tous les éléments déjà placés dans le tableau vide, jusqu'à trouver la position qui lui correspond.
 
 Pseudo-code:
 --
@@ -70,9 +70,9 @@ def tri_Insersiton_Recursif(tab : [int], i : int)->[int]: #i est le nombre de fo
 Complexité:
 --
 ```
-    Meilleur cas: O(n)
-    Pire cas: O(n^2)
-    Cas moyen: O(n^2)
+    Meilleur cas: O(n) n-1
+    Pire cas: O(n^2) n^2/2
+    Cas moyen: O(n^2) n^2/4
 
     Mémoire: O(1)
 ```
