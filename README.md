@@ -3,7 +3,7 @@
 
 explication:
 --
-Le tri par insertionest un algorithme de tri par comparaison qui consiste à trier un tableau en plaçant les éléments un par un dans un tableau vide. Pour ce faire, on compare l'élément à placer avec tous les éléments déjà placés dans le tableau vide, jusqu'à trouver la position qui lui correspond.
+Le tri par insertion est un algorithme de tri par comparaison qui consiste à trier un tableau en plaçant les éléments un par un dans un tableau vide. Pour ce faire, on compare l'élément à placer avec tous les éléments déjà placés dans le tableau vide, jusqu'à trouver la position qui lui correspond.
 
 Pseudo-code:
 --
