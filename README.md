@@ -27,7 +27,7 @@ Pseudo-code:
 Python:
 --
 
-Iteraratif
+Iteratif
 --
 ```py
 def tri_Insersiton(tab : [int])->[int]:
